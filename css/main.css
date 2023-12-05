@@ -46,6 +46,21 @@ a {
     color: var(--clr-orange);
 }
 
+.btn {
+    max-width: 150px;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--clr-orange);
+    color: #000;
+    font-weight: 600;
+    border-radius: 16px;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--clr-blue-600);
+    color: #fff;
+}
+
 /* HEADER STYLES */
 
 header {
@@ -88,3 +103,32 @@ header .container{
     gap: 2rem;
 }
 
+/* BANER */
+
+
+.baner {
+    position: relative;
+}
+
+.baner img {
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+}
+
+.baner-content {
+  background-color: rgba(245, 245, 245, 0.925);
+  color: black;
+  font-size: 1.25rem;
+  max-width: 600px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 32px;
+}
