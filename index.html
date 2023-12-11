@@ -51,18 +51,58 @@
 
         <section class="dmg-valuation">
             <div class="container">
-                <select name="marka" id="marka">
-                    <option value="audi">Audi</option>
-                    <option value="bmw">BMW</option>
-                    <option value="seat">Seat</option>
-                </select>
-            </div>
-        </section>
-
-        <section class="maped-img">
-            <div class="container">
+                <div class="damage-valuation__form">
+                    <select name="brand" id="brand">
+                        <option value="audi">Audi</option>
+                        <option value="bmw">BMW</option>
+                        <option value="seat">Seat</option>
+                    </select>
     
+                    <select name="model" id="model">
+                        <option value="a3">a3</option>
+                        <option value="a4">a4</option>
+                        <option value="a5">a5</option>
+                    </select>
+    
+                    <select name="car-parts" id="car-parts">
+                        <option value="lfd">Left front doors</option>
+                        <option value="rfd">Right front doors</option>
+                        <option value="lbd">Left back doors</option>
+                    </select>
+    
+                    <select name="damage-scale" id="damage-scale">
+                        <option value="low-damage">Low damage</option>
+                        <option value="medium-damage">Medium damage</option>
+                        <option value="high-damage">High damage</option>
+                    </select>
+
+                    <p class="confirm-form btn">Add</p>
+                </div>
+
+
+                <ul class="damage-list">
+                    <li class="single-damage__part">
+                        <p class="damaged-item">Right front doors</p>
+                        <p class="damaged-item__scale high-dmg">High damage</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 12 12"><path fill="black" d="M2.22 2.22a.749.749 0 0 1 1.06 0L6 4.939L8.72 2.22a.749.749 0 1 1 1.06 1.06L7.061 6L9.78 8.72a.749.749 0 1 1-1.06 1.06L6 7.061L3.28 9.78a.749.749 0 1 1-1.06-1.06L4.939 6L2.22 3.28a.749.749 0 0 1 0-1.06Z"/></svg>
+                    </li>
+
+                    <li class="single-damage__part">
+                        <p class="damaged-item">Right front doors</p>
+                        <p class="damaged-item__scale low-dmg">Low damage</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 12 12"><path fill="black" d="M2.22 2.22a.749.749 0 0 1 1.06 0L6 4.939L8.72 2.22a.749.749 0 1 1 1.06 1.06L7.061 6L9.78 8.72a.749.749 0 1 1-1.06 1.06L6 7.061L3.28 9.78a.749.749 0 1 1-1.06-1.06L4.939 6L2.22 3.28a.749.749 0 0 1 0-1.06Z"/></svg>
+                    </li>
+
+                    <li class="single-damage__part">
+                        <p class="damaged-item">Right front doors</p>
+                        <p class="damaged-item__scale med-dmg">Medium damage</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 12 12"><path fill="black" d="M2.22 2.22a.749.749 0 0 1 1.06 0L6 4.939L8.72 2.22a.749.749 0 1 1 1.06 1.06L7.061 6L9.78 8.72a.749.749 0 1 1-1.06 1.06L6 7.061L3.28 9.78a.749.749 0 1 1-1.06-1.06L4.939 6L2.22 3.28a.749.749 0 0 1 0-1.06Z"/></svg>
+                    </li>
+                </ul>
+
             </div>
+
+
         </section>
     </main>
 

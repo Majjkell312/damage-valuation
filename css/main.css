@@ -28,6 +28,19 @@ a {
 }
 
 :root {
+
+    --8px: 0.5rem;
+    --12px: 0.75rem;
+    --16px: 1rem;
+    --20px: 1.25rem;
+    --24px: 1.5rem;
+    --28px: 1.75rem;
+    --32px: 2rem;
+    --36px: 2.25rem;
+    --40px: 2.5rem;
+    --44px: 2.75rem;
+    --48px: 3rem;
+
     --clr-orange: #FF6700;
     --clr-blue-400: #3A6EA5;
     --clr-blue-600: #004E98;
@@ -38,7 +51,7 @@ a {
 .container {
     width: 100%;
     max-width: 1440px;
-    padding-inline: 2rem;
+    padding-inline: var(--32px);
     margin-inline: auto;
 }
 
@@ -47,13 +60,17 @@ a {
 }
 
 .btn {
-    max-width: 150px;
-    padding: 0.75rem 1.5rem;
+    font-size: var(--20px);
+    min-width: 150px;
+    width: fit-content;
+    padding: var(--12px) var(--24px);
     background-color: var(--clr-orange);
     color: #000;
     font-weight: 600;
     border-radius: 16px;
     transition: all 0.3s;
+    text-align: center;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -64,7 +81,7 @@ a {
 /* HEADER STYLES */
 
 header {
-    padding-block: 1rem;
+    padding-block: var(--16px);
     box-shadow: 2px 4px 16px var(--clr-gray-200);
 }
 
@@ -81,7 +98,7 @@ header .container{
 }
 
 .logo {
-    gap: 0.5rem;
+    gap: var(--8px);
 }
 
 .logo * { 
@@ -97,10 +114,10 @@ header .container{
 }
 
 .nav-list {
-    font-size: 1.25rem;
+    font-size: var(--20px);
     font-weight: 600;
     height: 100%;
-    gap: 2rem;
+    gap: var(--32px);
 }
 
 /* BANER */
@@ -119,9 +136,9 @@ header .container{
 .baner-content {
   background-color: rgba(245, 245, 245, 0.925);
   color: black;
-  font-size: 1.25rem;
+  font-size: var(--20px);
   max-width: 600px;
-  padding: 2rem;
+  padding: var(--32px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -131,4 +148,37 @@ header .container{
   top: 50%;
   transform: translateY(-50%);
   border-radius: 32px;
+}
+
+/* DAMAGE FORM */
+
+.dmg-valuation {
+    margin-block: var(--48px);
+}
+
+.damage-valuation__form { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(225px, 100%), 1fr));
+    gap: var(--24px) var(--32px);
+    align-content: center;
+    max-width: 750px;
+    margin-inline: auto;
+    box-shadow: 1px 4px 16px var(--clr-gray-400);
+    padding: var(--40px) var(--32px);
+    border-radius: 16px;
+}
+
+.damage-valuation__form select {
+    background-color: rgba(255, 102, 0, 0.05);
+    padding: var(--16px);
+    font-size: 1.5rem;
+    border: 2px solid var(--clr-orange);
+    outline: 0;
+    border-radius: 16px;
+}
+
+.confirm-form {
+    margin-inline: auto;
+    grid-column: 1/3;
+    margin-top: var(--32px);
 }
